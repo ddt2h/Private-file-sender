@@ -324,7 +324,7 @@ void User::tryConnection() {
 		else {
 			std::cout << "Cannot connect to server" << std::endl;
 		}
-		_sleep(30);
+		_sleep(100);
 
 	}
 } 

@@ -14,8 +14,6 @@
 
 #include <shobjidl.h> 
 
-#include "../src/Timer.hpp"
-
 #ifndef SEND_CORE_HPP
 #define SEND_CORE_HPP
 
@@ -40,7 +38,7 @@ private:
 };
 
 struct UserDataNetwork {
-	Engine::Timer timer;
+	Timer timer;
 	int id;
 };
 
@@ -102,9 +100,9 @@ private:
 
 	//Ping stuff
 	double currentPing;
-	Engine::Timer pingTimer;
-	Engine::Timer timeOutTimer;
-	Engine::Timer sendPingTimer;
+	Timer pingTimer;
+	Timer timeOutTimer;
+	Timer sendPingTimer;
 
 	void timeOutHandler();
 
